@@ -1,0 +1,4 @@
+POST http://localhost:8080/api/v1/goals
+Content-Type: application/json
+
+{ "title": "CAT - Profit and Loss", "goalType": "LEARNING", "commitmentMinutes": 120, "commitmentType": "DAILY", "preferredStartTime": "09:00:00", "preferredEndTime": "11:00:00", "startDate": "2026-08-27", "notes": "Focus on weighted averages first" }
