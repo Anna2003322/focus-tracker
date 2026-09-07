@@ -2,3 +2,39 @@ POST http://localhost:8080/api/v1/goals
 Content-Type: application/json
 
 { "title": "CAT - Profit and Loss", "goalType": "LEARNING", "commitmentMinutes": 120, "commitmentType": "DAILY", "preferredStartTime": "09:00:00", "preferredEndTime": "11:00:00", "startDate": "2026-08-27", "notes": "Focus on weighted averages first" }
+
+###
+POST http://localhost:8080/api/v1/goals
+Content-Type: application/json
+
+{ "title": "CAT - Ratio", "goalType": "LEARNING", "commitmentMinutes": 60, "commitmentType": "DAILY", "preferredStartTime": "07:00:00", "preferredEndTime": "08:00:00", "startDate": "2026-08-27"}
+
+###
+POST http://localhost:8080/api/v1/goals
+Content-Type: application/json
+
+{ "title": "Job Hunting", "goalType": "MAINTENANCE", "commitmentMinutes": 100, "commitmentType": "DAILY", "startDate": "2026-08-27"}
+
+###
+POST http://localhost:8080/api/v1/availability
+Content-Type: application/json
+
+{ "startTime": "09:00:00", "endTime": "19:00:00", "label": "Working hours", "isExcluded": false}
+
+###
+POST http://localhost:8080/api/v1/availability
+Content-Type: application/json
+
+{"startTime": "13:00:00", "endTime": "13:30:00", "label": "Lunch", "isExcluded": true}
+
+###
+POST http://localhost:8080/api/v1/availability
+Content-Type: application/json
+
+{"startTime": "16:00:00", "endTime": "16:15:00", "label": "Tea break", "isExcluded": true}
+
+###
+GET http://localhost:8080/api/v1/goals
+
+###
+GET http://localhost:8080/api/v1/availability
