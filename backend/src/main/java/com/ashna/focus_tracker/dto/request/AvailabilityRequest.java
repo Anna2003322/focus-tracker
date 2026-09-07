@@ -1,5 +1,7 @@
 package com.ashna.focus_tracker.dto.request;
 
+import com.fasterxml.jackson.annotation.JsonProperty;
+
 import java.time.DayOfWeek;
 import java.time.LocalTime;
 
@@ -8,6 +10,8 @@ public class AvailabilityRequest {
     private LocalTime startTime;
     private LocalTime endTime;
     private String label;
+
+    @JsonProperty("isExcluded")
     private boolean isExcluded;
 
     public DayOfWeek getDayOfWeek() { return dayOfWeek; }
